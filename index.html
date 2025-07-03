@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hotflix</h1>
+    <input type="text" id="searchInput" placeholder="Search shows..." />
+  </header>
+
+  <section class="banner">
+    <img src="https://via.placeholder.com/1200x400?text=Featured+Show" alt="Banner"/>
+  </section>
+
+  <section class="category">
+    <h2>Popular Shows</h2>
+    <div class="movie-grid" id="movieGrid">
+      <!-- Movies loaded here -->
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Preview" />
+    <h3 id="modalTitle"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
